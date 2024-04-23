@@ -1,0 +1,221 @@
+body{
+    margin: 0px 0px 0px 0px;
+    background-color: rgb(247, 247, 239);
+    font-family: myFirstFont;
+}
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    .header{
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+    }
+    #NameOfCompany{
+        z-index: -1;
+    }
+}
+#NameOfCompany{
+    font-size: 2vw;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: beige;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+#logo{
+    height: 10vh;
+    width: auto;
+}
+.left, .right{
+    display: flex;
+    align-items: center;
+}
+.grow_text{
+    transition: transform 0.3s ease; /* Animation timing */
+}
+.menu{
+    font-size: 1.5vw;
+}
+.grow_text:hover{
+    transform: scale(1.1);
+}
+.left > p,.right > a,.right>img{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.left > p,.right > a{
+    font-size: 1vw;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#Solar_poza {
+    width: 100%;  /* This ensures it only takes up the width of its container */
+    height: auto;
+    display: block;
+    opacity: 0.9;
+}
+
+#imagine{
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#textImage{
+    font-family: myFirstFont;
+    opacity: 0.7;
+    font-size: 3vw;
+    position: absolute;
+    width: 60%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(Exo_2/Exo2-VariableFont_wght.ttf);
+}
+.description{
+    margin-left: 20%;
+    font-family: myFirstFont;
+}
+.text{
+    font-size: 1.8w;
+    background-color: beige;
+    padding: 20px;
+    border-radius: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+.text_hover{
+    font-size: 1.8vw;
+    background-color: beige;
+    padding: 20px;
+    border-radius: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+.text_hover:hover{
+    transform: scale(1.05) ;
+    background-color: antiquewhite;
+    transition: background-color 1s linear;
+}
+.description.text{
+    width: 50vw;
+    margin-bottom: 10vh;
+}
+.subtitlu{
+    font-size: 2.5vw;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+.info-cassete{
+    margin: 4vw;
+    display: flex;
+    justify-content: space-between;
+}
+.right-side{
+    max-width:25vw;
+    height: auto;
+    border-radius: 30px;
+}
+.left-side.text{
+    padding-top: 0px;
+    width: 35vw;
+    font-size: 1.8vw;
+}
+
+
+/* Styling the Navbar */
+/* .navbar {
+    overflow: hidden;
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.menu li {
+    float: left;
+}
+  
+.menu li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1vw 1.3vw;
+    text-decoration: none;
+}
+
+Dropdown Content (hidden by default)
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 1.5vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+Show the dropdown menu on hover
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+Change color of dropdown links on hover
+.dropdown-content a:hover {
+    background-color:beige;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    overflow: hidden;
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.menu li {
+    float: left;
+}
+.menu li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1vw 1.3vw;
+    text-decoration: none;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 1.5vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color:beige;
+}

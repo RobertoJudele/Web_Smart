@@ -1,0 +1,130 @@
+body{
+    margin: 0px 0px 0px 0px;
+    background-color: rgb(247, 247, 239);
+    font-family: myFirstFont;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: beige;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(Exo_2/Exo2-VariableFont_wght.ttf);
+}
+#logo{
+    height: 10vh;
+    width: auto;
+}
+.left, .right{
+    display: flex;
+    align-items: center;
+}
+.titlu{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10vh;
+}
+.element{
+    display: flex;
+    align-items: center;
+    transition: ease-in-out, background-color 2s, transform 1.5s;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 30px;
+}
+.element:hover{
+    background-color: wheat;
+    transform: scale(1.1);
+}
+.grow_text{
+    transition: transform 0.3s ease;
+    font-size: 20px; 
+}
+.grow_text:hover{
+    transform: scale(1.1);
+}
+.left > p,.right > a,.right>img{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.left > p,.right > a{
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    overflow: hidden;
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color:beige;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+.layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    margin-top: 10vh;
+}
+.element{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+img{
+    width: 20vw;
+    border-radius: 30px;
+}
